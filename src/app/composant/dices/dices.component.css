@@ -1,0 +1,27 @@
+h1{
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(123, 114, 201);
+  padding-bottom: 20px;
+  border-bottom: 5px solid rgb(123, 114, 201);
+}
+.des{
+  width: 80%;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+td{
+  text-align: center;
+  font-size: large;
+}
+p{
+  text-align: center;
+  margin-top: 35px;
+  font-size: large;
+}
+button{
+  width: auto;
+  margin-bottom: 15px;
+}

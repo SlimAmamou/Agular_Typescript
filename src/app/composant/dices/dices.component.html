@@ -1,0 +1,32 @@
+
+<header>
+  <h1 >Jeux Des Dés</h1>
+</header>
+<body>
+  <div class="row justify-content-md-center">
+    <div class="des">
+      <table>
+        <thead>                    <!--Affichage Dés-->
+          <th ><span><img  src="{{dice1.img}}" ></span></th>
+          <th><img src="{{dice2.img}}"></th>
+          <th><img src="{{dice3.img}}"></th>
+        </thead>
+        <tbody>                    <!--Table de l'évolution de score-->
+          <td>Pointage: {{pointage}}</td>
+          <td>Bonus: {{bonus}}</td>
+          <td>Total des points: {{totalRoll}}</td>
+        </tbody>
+      </table>
+    </div>
+    <div><p>Cumulatif des points: {{total}}</p></div>     <!-- <-Cumul points -->
+    <div class="row justify-content-md-center">           <!-- Boutton Play-->
+      <button class="btn btn-primary" (click)="lanceLesDes()">Jouer à nouveau</button>
+    </div>
+      <div class="row justify-content-md-center">         <!-- Boutton RePlay-->
+    <button class="btn btn-secondary" (click)="rePlay()">
+      <span [ngClass]="[clique? 'spinner-border':'', clique? 'spinner-border-sm' : '']"></span>
+      {{initMessage}}</button>
+  </div>
+  </div>
+</body>
+
